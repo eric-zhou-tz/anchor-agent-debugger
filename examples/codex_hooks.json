@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
             "timeout": 5
           }
         ]
@@ -17,7 +17,40 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
             "timeout": 5
           }
         ]
@@ -28,7 +61,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "command": "/bin/sh -lc '/path/to/Anchor/bin/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log 2>>/tmp/anchor-codex-hooks.err'",
             "timeout": 5
           }
         ]
