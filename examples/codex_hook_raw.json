@@ -1,0 +1,6 @@
+{
+  "hook_event_name": "example",
+  "session_id": "sess_example",
+  "transcript_path": "/tmp/codex/transcript.jsonl",
+  "cwd": "/tmp/project"
+}

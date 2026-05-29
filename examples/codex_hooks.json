@@ -1,0 +1,38 @@
+{
+  "description": "Send raw Codex hook payloads to Anchor ingestion.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/sh -lc 'go run /Users/ericzhou/Desktop/Productivity/Projects/Serious/Anchor/cmd/anchor ingest --source codex >>/tmp/anchor-codex-hooks.log'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
